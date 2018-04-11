@@ -9,4 +9,4 @@ import java.io.Serializable
  *
  * @author Will "n9Mtq4" Bresnahan
  */
-class NetworkedEvent(@Transient override val initiatingEventSystem: EventSystem, var originatingNetworkClientConnection: NetworkClientConnection? = null, override var isCanceled: Boolean = false) : BaseEvent, Serializable
+open class NetworkedEvent(@Transient override val initiatingEventSystem: EventSystem, var originatingNetworkClientConnection: NetworkClientConnection? = null, override var isCanceled: Boolean = false) : BaseEvent, Serializable

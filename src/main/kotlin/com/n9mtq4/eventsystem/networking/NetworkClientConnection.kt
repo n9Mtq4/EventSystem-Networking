@@ -17,7 +17,7 @@ import java.net.Socket
  *
  * @author Will "n9Mtq4" Bresnahan
  */
-class NetworkClientConnection(@Transient val socket: Socket) : EnableListener, DisableListener, BaseListener, Serializable {
+open class NetworkClientConnection(@Transient val socket: Socket) : EnableListener, DisableListener, BaseListener, Serializable {
 	
 	@Transient private val linkedEventSystems = mutableListOf<EventSystem>()
 	

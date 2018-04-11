@@ -9,7 +9,7 @@ import com.n9mtq4.eventsystem.core.listener.BaseListener
  *
  * @author Will "n9Mtq4" Bresnahan
  */
-class PrintNetworkEvents : BaseListener {
+open class PrintNetworkEvents : BaseListener {
 	
 	@ListensFor
 	fun listenForNetwork(networkedEvent: NetworkedEvent, initEventSystem: EventSystem) {

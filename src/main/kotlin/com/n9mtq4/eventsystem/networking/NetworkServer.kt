@@ -10,7 +10,7 @@ import kotlin.concurrent.thread
  *
  * @author Will "n9Mtq4" Bresnahan
  */
-class NetworkServer(private val eventSystem: EventSystem, private val port: Int) {
+open class NetworkServer(private val eventSystem: EventSystem, private val port: Int) {
 	
 	private lateinit var serverSocket: ServerSocket
 	
